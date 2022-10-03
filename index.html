@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media ="screen" href="/Reservia/assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -42,8 +43,8 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Barre de recherche ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <form>
-        <span>x
-            <i class="fa-solid fa-magnifying-glass-location">x</i>
+        <span>
+            <i class="fa-solid fa-magnifying-glass-location"></i>
         </span>
         <input type="search" placeholder="Marseille, France"></input>
         <button class="rechercher">
@@ -55,10 +56,10 @@
 
     <div class="filtres">
         <h2>Filtres</h2>
-        <div>Economique</div>
-        <div>Familial</div>
-        <div>Romantique</div>
-        <div>Animaux autorisés</div>
+        <div><i class="fa-solid fa-money-bill-1-wave" aria-hidden="true"></i>Economique</div>
+        <div><i class="fa-solid fa-person" aria-hidden="true"></i>Familial</div>
+        <div><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</div>
+        <div><i class="fa-sharp fa-solid fa-dog" aria-hidden="true"> </i>Animaux autorisés</div>
     </div>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Résultats ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -83,13 +84,13 @@
                         <img src="/Reservia/assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                         <h3>Auberge de la Cannebière</h3>
                         <p>Nuit à partir de <b>25 €</b></p>
-                        <!-- <div aria-label="Note : 4 étoiles sur 5">
+                        <div aria-label="Note : 4 étoiles sur 5">
                             <i class="fa-solid fa-star blue" aria-hidden="true"></i>
                             <i class="fa-solid fa-star blue" aria-hidden="true"></i>
                             <i class="fa-solid fa-star blue" aria-hidden="true"></i>
                             <i class="fa-solid fa-star blue" aria-hidden="true"></i>
                             <i class="fa-solid fa-star grey" aria-hidden="true"></i>
-                        </div> -->
+                        </div>
                     </a>
                 </div>
 
@@ -151,24 +152,30 @@
                 <div class="hotel_soleil">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                        <h3>Hôtel le Soleil du matin</h3>
-                        <p>Nuit à partir de <b>126 €</b></p>
+                        <div class="populairestxt">
+                            <h3>Hôtel le Soleil du matin</h3>
+                            <p>Nuit à partir de <b>126 €</b></p>
+                        </div>
                     </a>
                 </div>
 
                 <div class="chambres_eau">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p>Nuit à partir de <b>71 €</b></p>
+                        <div class="populairestxt">
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>Nuit à partir de <b>71 €</b></p>
+                        </div>
                     </a>
                 </div>
 
                 <div class="bleu_blanc">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p>Nuit à partir de <b>68 €</b></p>
+                        <div class="populairestxt">
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>Nuit à partir de <b>68 €</b></p>
+                        </div>
                     </a>
                 </div>
 

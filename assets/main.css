@@ -64,8 +64,13 @@ form {
     overflow: auto;
 }
 
+form i {
+    height: 2vw;
+}
+
 form > .rechercher {
     background-color: #0065FC;
+    height: 3vw;
     color: white;
     font-weight: bold;
     border: none;
@@ -78,12 +83,13 @@ form > .rechercher {
 }
 
 form input {
+    width: 10vw;
+    height: 3vw;
     border-right: none;
     border-left: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
     padding: 0 1.5rem;
-    width: 14rem;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Raleway","Sans serif";
@@ -94,6 +100,36 @@ form input {
 
 .filtres {
     margin: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.filtres div {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.filtres i {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    color: #0065FC;
+    margin-right: 1rem;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Résultats ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -124,15 +160,16 @@ form input {
 }
 
 .hebergementbox {
+    margin: 2em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.hebergement div {
+.hebergementbox div {
     border-radius: 10px;
-    margin: 8px;
+    margin: 1em;
     border-style: solid;
     border-color: white;
     background-color: white;
@@ -148,7 +185,8 @@ form input {
 }
 
 .hebergement h2 {
-    margin: 30px;
+    margin-top: 2em;
+    margin-left: 2em;
 }
 
 .hebergement h3 {
@@ -223,16 +261,15 @@ form input {
 }
 
 .activitebox {
+    margin: 1vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3px;
+    justify-content: space-around;
 }
 
 .box_gauche {
     display: flex;
     flex-direction: row;
-    background: red;
 }
 
 .inner_box_gauche {
@@ -243,7 +280,6 @@ form input {
 .box_droite {
     display: flex;
     flex-direction: row;
-    background: green;
 }
 
 .inner_box_droite {
@@ -272,7 +308,11 @@ form input {
     background-color: white;
 }
 
-
+#vieuxport {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
