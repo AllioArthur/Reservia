@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media ="screen" href="/Reservia/assets/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -44,7 +47,7 @@
     
     <form>
         <span>
-            <i class="fa-solid fa-magnifying-glass-location"></i>
+            <i class="fa-solid fa-magnifying-glass-location" id="loupe"></i>
         </span>
         <input type="search" placeholder="Marseille, France"></input>
         <button class="rechercher">
@@ -65,7 +68,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Résultats ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <div class="resultats">
-        <div></div>
+        <div><i class="fa-solid fa-circle-info"></i></div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
@@ -79,102 +82,173 @@
 
             <section class="hebergementbox">
 
-                <div class="auberge_cannebiere">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <h3>Auberge de la Cannebière</h3>
-                        <p>Nuit à partir de <b>25 €</b></p>
-                        <div aria-label="Note : 4 étoiles sur 5">
-                            <i class="fa-solid fa-star blue" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star blue" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star blue" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star blue" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star grey" aria-hidden="true"></i>
-                        </div>
-                    </a>
+                <div class="colonne1">
+
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <h3>Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <b>25 €</b></p>
+                            <div aria-label="Note : 4 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de <b>46 €</b></p>
+                            <div aria-label="Note : 3 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                
                 </div>
 
-                <div class="hotel_port">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de <b>52 €</b></p>
-                    </a>
+                <div class="colonne2">
+
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <b>52 €</b></p>
+                            <div aria-label="Note : 5 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                            <h3>Auberge le panier</h3>
+                            <p>Nuit à partir de <b>23 €</b></p>
+                            <div aria-label="Note : 4 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="hotel_mouettes">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                        <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de <b>76 €</b></p>
-                    </a>
-                </div>
-            
+                <div class="colonne3">
 
-            
-                <div class="hotel_mer">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                        <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de <b>46 €</b></p>
-                    </a>
-                </div>
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                            <h3>Hôtel les mouettes</h3>
+                            <p>Nuit à partir de <b>76 €</b></p>
+                            <div aria-label="Note : 4 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="auberge_panier">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                        <h3>Auberge le panier</h3>
-                        <p>Nuit à partir de <b>23 €</b></p>
-                    </a>
-                </div>
+                    <div class="divHotel">
+                        <a>
+                            <img src="/Reservia/assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                            <h3>Hôtel chez Amina </h3>
+                            <p>Nuit à partir de <b>96 €</b></p>
+                            <div aria-label="Note : 5 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="hotel_amina">
-                    <a>
-                        <img src="/Reservia/assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                        <h3>Hôtel chez Amina </h3>
-                        <p>Nuit à partir de <b>96 €</b></p>
-                    </a>
                 </div>
-
-                <!-- <h4>Afficher plus</h4> -->
+                
                 
             </section>
+
+            <h4>Afficher plus</h4>
+
         </section>
 
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Les plus populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
         <section class="populaires">
 
-            <h2> Les plus populaires</h2>  
+                <div class="populairesintro">
+                    <h2> Les plus populaires</h2>
+                    <i class="fa-solid fa-arrow-trend-up" id="arrow"></i>
+                </div>
 
             <section class="populairesbox">
 
-                <div class="hotel_soleil">
+                <div class="divHotel">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                         <div class="populairestxt">
                             <h3>Hôtel le Soleil du matin</h3>
                             <p>Nuit à partir de <b>126 €</b></p>
+                            <div aria-label="Note : 5 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="chambres_eau">
+                <div class="divHotel">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
                         <div class="populairestxt">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de <b>71 €</b></p>
+                            <div aria-label="Note : 4 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="bleu_blanc">
+                <div class="divHotel">
                     <a>
                         <img src="/Reservia/assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                         <div class="populairestxt">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de <b>68 €</b></p>
+                            <div aria-label="Note : 4 étoiles sur 5">
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star blue" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star grey" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -192,25 +266,27 @@
 
         <div class ="activitebox">
 
-            <div class="box_gauche">
+            <div class="bloc1">
 
-                <a id="vieux_port">
-                    <div class="activitesdiv">
-                        <img src="/Reservia/assets/images/activites/4_small/vieux_port.jpg">
-                        <h3>Vieux Port</h3>
-                    </div>
-                </a>
+                <div class="vieuxport">
+                    <a>
+                        <div class="activitesdivA">
+                            <img src="/Reservia/assets/images/activites/4_small/vieux_port.jpg">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
 
-                <div class="inner_box_gauche">
+                <div class="activitecolonne2">
 
-                    <a id="fort">
+                    <a id="pomegues">
                         <div class="activitesdiv">
                             <img src="/Reservia/assets/images/activites/4_small/fort.jpg">
                             <h3>Fort de Pomègues</h3>
                         </div>
                     </a>
 
-                    <a id="ile">
+                    <a id="frioul">
                         <div class="activitesdiv">
                             <img src="/Reservia/assets/images/activites/4_small/frioul.jpg">
                             <h3>Îles du Frioul</h3>
@@ -218,19 +294,21 @@
                     </a>
 
                 </div>
-
+            
             </div>
+            
+            <div class="bloc2">
 
-            <div class="box_droite">
-        
-                <a id="calanques">
-                    <div class="activitesdiv">
+                <div class="calanques">
+                    <a>
+                    <div class="activitesdivA">
                         <img src="/Reservia/assets/images/activites/4_small/calanques.jpg">
                         <h3>Parc National des Calanques</h3>
                     </div>
-                </a>
+                    </a>
+                </div>
 
-                <div class="inner_box_droite">
+                <div class="activitecolonne2">
 
                     <a id="notredame">
                         <div class="activitesdiv">
@@ -247,7 +325,7 @@
                     </a>
 
                 </div>
-
+                
             </div>
 
         </div>
