@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Reservia/assets/ResponsiveReservia.css" media="screen and (max-width: 768px)">
     <title>Document</title>
 </head>
 <body>
@@ -46,8 +47,8 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Barre de recherche ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <form>
-        <span>
-            <i class="fa-solid fa-magnifying-glass" id="loupe"></i>
+        <span id="loupeiconspan">
+            <i class="fa-solid fa-magnifying-glass" id="glass"></i>
         </span>
         <input type="search" placeholder="Marseille, France"></input>
         <button class="rechercher">
@@ -58,12 +59,14 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Filtres ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <div class="filtres">
-        <h2>Filtres</h2>
-        <div><i class="fa-solid fa-money-bill-1-wave" aria-hidden="true"></i>Economique</div>
-        <div><i class="fa-solid fa-person" aria-hidden="true"></i>Familial</div>
-        <div><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</div>
-        <div><i class="fa-sharp fa-solid fa-dog" aria-hidden="true"> </i>Animaux autorisés</div>
-    </div>
+        <h2>Filtres</h2>   
+            <div class="responsivefilters">
+                <div class="divfiltres"><i class="fa-solid fa-money-bill-1-wave"></i>Economique</div>
+                <div class="divfiltres"><i class="fa-solid fa-person"></i>Familial</div>
+                <div class="divfiltres"><i class="fa-solid fa-heart"></i>Romantique</div>
+                <div class="divfiltres"><i class="fa-sharp fa-solid fa-dog"> </i>Animaux autorisés</div>
+            </div>
+        </div>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Résultats ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -80,7 +83,7 @@
 
         <section class="hebergement" id="hebergement">
 
-            <h2> Hébergements à Marseille</h2>
+            <h2>Hébergements à Marseille</h2>
 
             <section class="hebergementbox">
 
@@ -284,7 +287,7 @@
 
                 <div class="vieuxport">
                     <a>
-                        <div class="activitesdivA">
+                        <div>
                             <img src="/Reservia/assets/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="bigimg">
                             <h3>Vieux Port</h3>
                         </div>
@@ -315,7 +318,7 @@
 
                 <div class="calanques">
                     <a>
-                    <div class="activitesdivA">
+                    <div>
                         <img src="/Reservia/assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="bigimg">
                         <h3>Parc National des Calanques</h3>
                     </div>

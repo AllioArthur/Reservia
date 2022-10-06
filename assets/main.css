@@ -24,10 +24,6 @@ ul {
     display: inline-flex;
 }
 
-div {
-    display: block;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 header {
@@ -44,6 +40,24 @@ header li {
     justify-content: flex-end;
     padding: 2rem 2rem;
 }
+
+.NAVhebergements:hover {
+    color: blue;
+}
+
+.NAVactivites:hover {
+    color: blue;
+}
+
+.NAVinscrire {
+    color: blue;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Top text ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .toptext {
@@ -62,26 +76,23 @@ form {
     margin-right: 10%;
 }
 
-#loupe {
+#loupeiconspan {
     background-color: #F2F2F2;
-    padding: 2em 0 0 0;
+    padding: 0 0 0 0;
     border-radius: 1rem 0 0 1rem;
     text-align: center;
-    width: 4em;
-    height: 2.5em;
-    color: blue;
+    width: 3vw;
+    height: 3vw;
+    color: black;
 }
 
-form i {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    overflow: auto;
-    height: 2vw;
+#glass {
+    padding: 1vw 0 0 0;
 }
 
-form > .rechercher {
+form button {
     background-color: #0065FC;
+    width: 7vw;
     height: 3vw;
     color: white;
     font-weight: bold;
@@ -113,20 +124,25 @@ form input {
 .filtres {
     margin: 2vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.filtres div {
-    margin-left: 3rem;
+.responsivefilters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divfiltres {
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
-    transition-duration: 0.1s;
     font-weight: bold;
     padding-right: 1rem;
 }
@@ -178,29 +194,30 @@ form input {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hébergements + populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .box {
-    /* background-color: #0065FC; */
-    margin-top: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hébergements à Marseille ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .hebergement {
-    padding: 2vw;
+    margin: 0;
+    padding: 1em 0 0 1em;
     background-color: rgb(240, 240, 240);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: auto;
+    max-height: auto;
 }
 
 .hebergementbox {
-    margin: 2em;
+    margin: 0;
+    padding: 0 2em 0 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -225,41 +242,65 @@ form input {
 }
 
 .divHotel {
-    margin: 1rem 2rem 2rem 2rem;
-    max-width: 20rem;
+    padding: 0;
+    margin: 1em 1em 2em 1em;
+    width: 17em;
+    height: 15em;
     background-color: white;
-    padding: 0.350rem;
+    border: solid;
+    border-color: white;
+    border-width: 0.25em;
     border-radius: 1.50rem;
     box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
     overflow: hidden;
-    height: 100%;
 }
+
 
 .hebergement img {
     object-fit: cover;
     overflow: hidden;
-    min-height: 200px;
-    max-height: 200px;
+    height: 50%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
 
 .divtext {
-    margin: 1rem 0 1rem 1rem;
+    margin: 0.25em 0 0.25em 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.divtext > h3 {
+    margin: 0.5em 0 0.5em 0;
+}
+
+.divtext > p {
+    margin: 0.2em 0 0.2em 0;
+}
+
+.hebergement h2 {
+    padding: 0;
+    margin-left: 3em;
+}
+
+.hebergement > h4 {
+    padding: 0;
+    margin: 0 0 3em 4em;
 }
 
 [aria-label] {
     color: blue;
+    margin: 0.5em 0 0 0;
 }
 
 [aria-label] #greystar {
     color: grey;
 }
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Les plus populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -268,14 +309,18 @@ form input {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 2vw;
+    justify-content: space-between;
+    padding: 2em 0 2em 0em;
+    margin: 0;
+    width: auto;
+    max-height: 50em;
 }
 
 .populairesintro {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 0 0 0;
 }
 
 #arrow {
@@ -294,6 +339,7 @@ form input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 0 0 0;
 }
 
 .populaires img {
@@ -306,36 +352,38 @@ form input {
 }
 
 .populairestxt {
-    margin: 1vw 1vw 0 1vw;
+    margin: 0vw 1vw 0 1vw;
     display: flex;
     flex-direction: column;
 }
 
-/*
-object-fit: cover;
-    overflow: hidden;
-    min-height: 200px;
-    max-height: 200px;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-*/
-
 .divPop {
+    max-width: 28em;
+    max-height: 12em;
     margin: 3rem 3rem 0rem 3rem;
     background-color: white;
-    padding: 0.350rem;
+    border-width: 0.25em;
+    border-style: solid;
     border-radius: 1.50rem;
+    border-color: white;
     box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
     box-sizing: border-box;
+    cursor: pointer;
     overflow: hidden;
-    
 }
+    
 
 .populaires a {
     display: flex;
     flex-direction: row;
+}
+
+.populaires h2 {
+    padding: 0;
+}
+
+.populaires h4 {
+    padding: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Activités à Marseille ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -346,35 +394,42 @@ object-fit: cover;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 8%;
+    position: center;
 }
 
 .activitebox {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    margin: 1vw;
+    position: center;
 }
 
 .activitebloc {
     display: flex;
     flex-direction: row;
     max-width: 50%;
+    padding: 0 0 0 1vw;
 }
 
 .activitecolonne {
+    padding: 0 0 0 1vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .smallimg {
     object-fit: cover;
-    max-height: 20em;
-    min-width: 40em;
+    max-height: 15em;
+    min-width: 100%
 }
 
 .bigimg {
     object-fit: cover;
-    height: 47em;
+    height: 37em;
+    min-width: 100%;
 }
 
 .activitesdiv {
@@ -385,21 +440,17 @@ object-fit: cover;
 }
 
 .vieuxport {
-    margin: 10px;
+    margin: 1vw;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
     overflow: hidden;
 }
 
 .calanques {
-    margin: 10px;
-    object-fit: cover;
+    margin: 1vw;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .activites h3 {
@@ -410,17 +461,16 @@ object-fit: cover;
 
 footer {
     background-color: #f5f1f1;
-    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    max-width: 100%;
-    box-sizing: border-box;
+    flex-direction: row;
+    padding: 0 0 2em 0;
 }
+
 .fcolonne {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2rem 10rem;
+    padding: 2em 10em
 }
 
 .flist {
@@ -429,5 +479,5 @@ footer {
 }
 
 footer li {
-    margin: 8px;
+    margin: 0.5em;
 }

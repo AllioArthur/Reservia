@@ -1,0 +1,199 @@
+/* RESPONSIVE */
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navmenu {
+    position: center;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Barre de recherche ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+form {
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    margin-left: 8vw;
+    margin-right: 0;
+
+}
+
+#loupeiconspan {
+    width: 10vw;
+    height: 10vw;
+}
+
+#glass {
+    padding: 3vw 0 0 0;
+}
+
+form button {
+    background-color: #0065FC;
+    width: 7vw;
+    height: 3vw;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+form input {
+    width: auto;
+    height: 10vw;
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway","Sans serif";
+}
+
+
+form > button {
+    background-color: #0065FC;
+    height: 10vw;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem 1rem 1rem 1rem;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Filtres ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hébergements + populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.box {
+    flex-direction: column-reverse;
+    margin: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hébergements à Marseille ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.hebergement {
+    border-radius: 0;
+    background-color: white;
+}
+
+.hebergementbox {
+    padding: 0;
+    flex-direction: column;
+}
+
+.divHotel {
+    margin: 1em 0em 0em 0em;
+    width: 28em;
+    height: 18em;
+    position: center;
+    
+}
+
+.hebergement img {
+    height: 50%;
+    width: 100%;
+}
+
+.divtext {
+    margin: 1em 0 0 1em;
+}
+
+.divtext > h3 {
+    margin: 0 0 0.3em 0;
+}
+
+.divtext > p {
+    margin: 0 0 0.3em 0;
+}
+
+.hebergement > h4 {
+    padding: 0;
+    margin: 3em 0 3em 1em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Les plus populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.populaires img {
+    height: 170px;
+    min-width: 170px;
+    max-width: 170px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.populairestxt {
+    margin: 0vw 2vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ACTIVITES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.activites {
+    margin: 2vw;
+}
+
+.activitebox {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.activitebloc {
+    flex-direction: column;
+}
+
+.bigimg {
+    object-fit: cover;
+    max-height: 15em;
+    min-width: 100%;
+}
+
+.activitesdiv {
+    width: 180%;
+    height: 100%;
+}
+
+.vieuxport {
+    width: 180%;
+    height: 100%;
+    margin: 1em;
+}
+
+.calanques {
+    width: 180%;
+    height: 100%;
+    margin: 1em;
+}
+
+.activites h3 {
+    margin: 3vw;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+footer {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.fcolonne {
+    padding: 2rem 1.5rem;
+}
