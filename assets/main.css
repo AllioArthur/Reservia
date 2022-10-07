@@ -37,6 +37,7 @@ header {
 
 header li {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     padding: 2rem 2rem;
 }
@@ -44,6 +45,7 @@ header li {
 .NAVhebergements:hover {
     color: blue;
 }
+
 
 .NAVactivites:hover {
     color: blue;
